@@ -27,7 +27,7 @@ Name: allUsers
 Access: Reader
 
 Create a request.json file in Cloud Shell.
-REPLACE my-bucket-name WITH YOUR BUCKET NAME 
+REPLACE "my-bucket-name" WITH YOUR BUCKET NAME 
 nano request.json
 {
   "requests": [
