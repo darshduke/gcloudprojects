@@ -28,3 +28,23 @@ Access: Reader
 
 Create a request.json file in Cloud Shell.
 REPLACE my-bucket-name WITH YOUR BUCKET NAME 
+
+{
+  "requests": [
+      {
+        "image": {
+          "source": {
+              "gcsImageUri": "gs://my-bucket-name/selfie.png"
+          }
+        },
+        "features": [
+          {
+            "type": "FACE_DETECTION"
+          },
+          {
+            "type": "LANDMARK_DETECTION"
+          }
+        ]
+      }
+  ]
+}
