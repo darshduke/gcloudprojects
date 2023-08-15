@@ -1,1 +1,31 @@
 
+#Open Google Console#
+#Activate Cloud Shell#
+RUN THIS IN CLOUD SHELL
+gcloud auth list   
+# THIS COMMAND IS USE TO CHECK THE ACTIVE ACCOUN IN GCLOUD #
+gcloud config list project
+Create an API key
+To create an API key, from the Navigation menu go to APIs & Services > Credentials in the Cloud Console.
+Click Create Credentials and select API key.
+RUN IN CLOUD SHELL
+export API_KEY=<YOUR_API_KEY>
+
+Upload an image to a Cloud Storage bucket
+Navigation menu, select Cloud Storage > Buckets. Next to Buckets, click Create.
+After naming your bucket, click Choose how to control access to objects.
+Uncheck Enforce public access prevention on this bucket and select the Fine-grained circle.
+CLICK CREATE
+
+UPLOAD ANY IMAGE TO YOUR BUCKET 
+
+Click on the 3 dots for your image and select Edit access.
+Click Add entry then enter the following:
+
+Entity: Public
+Name: allUsers
+Access: Reader
+
+Create a request.json file in Cloud Shell.
+REPLACE my-bucket-name WITH YOUR BUCKET NAME 
+nano request.json
